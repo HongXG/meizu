@@ -330,7 +330,7 @@
 }
 
 #footer .f_action{
-  width: 6rem;
+  width: 40%;
   border-top: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-around;
@@ -361,7 +361,7 @@
 #footer .f_btn{
   display: inline-block;
   line-height: 1.8rem;
-  width: 6rem;
+  width: 30%;
   color: #fff;
   font-size: 14px;
   text-align: center;
