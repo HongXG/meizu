@@ -1,0 +1,637 @@
+/*html{
+  font-size: 20px;
+}*/
+#app {
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+/*=================== 头部 开始 ===================*/
+
+/*-------------------------------------------------*/
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#header .h_back{
+  position: absolute;
+  left: .3rem;
+  bottom: .4rem;
+  padding: .4rem;
+  z-index: 10;
+  color: #666;
+}
+
+#header .h_back i{
+  font-size: .7rem;
+}
+
+#header .h_home{
+  position: absolute;
+  right: .7rem;
+  bottom: .4rem;
+  z-index: 5;
+  padding: .4rem;
+  color: #666;
+}
+
+#header .h_home i{
+  font-size: .7rem;
+}
+
+#header .h_opacity{
+  transition: all .3s;
+  width: 100%;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  background-color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+
+#header .h_opacity span{
+  display: inline-block;
+  font-size: 0.7rem;
+  box-sizing: border-box;
+}
+
+
+
+
+/*-------------------------------------------------*/
+
+/*=================== ========= ===================*/
+
+
+
+
+/*=================== main 开始 ===================*/
+
+/*-------------------------------------------------*/
+
+#main{
+  padding-top: 2.4rem;
+  overflow: hidden;
+}
+
+#main .m_goods{
+  background-color: #fff;
+}
+
+#main .m_goods .m_banner{
+  margin-top: -1.2rem;
+}
+
+#main .m_goods .m_banner .swiper-wrapper{
+  width: 100%;
+}
+
+#main .m_goods .m_banner .swiper-wrapper .swiper-slide{
+  width: 100%;
+}
+
+#main .m_goods .m_banner .swiper-wrapper .swiper-slide img{
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+}
+
+#main .m_goods .m_banner .swiper-pagination{
+  bottom:0;
+}
+
+
+#main .prod{
+  margin-top: 2px;
+  box-sizing: border-box;
+  border-top: 1px solid #e5e5e5;
+  background: #eee;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#main .prod .p_info{
+  padding: .6rem 0 .3rem .5rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+#main .prod .p_info .pi_one{
+  padding-bottom: .2rem;
+}
+
+#main .prod .p_info .pi_one h1{
+  display: inline-block;
+  color: #333;
+  font-size: 16px;
+  line-height: 1rem;
+  width: 12rem;
+  font-weight: 400;
+}
+
+#main .prod .p_info .pi_two{
+  height: 1.1rem;
+  line-height: 1.1rem;
+}
+
+#main .prod .p_info .pi_two span{
+  color: #f0415f;
+  font-size: 18px;
+}
+
+#main .prod .p_info .pi_three{
+  height: 1.1rem;
+  line-height: 1.1rem;
+}
+
+#main .prod .p_info .pi_three span{
+  color: #f0415f;
+  font-size: 14px;
+}
+
+#main .prod .p_info .pi_fore{
+  height: 1.1rem;
+  line-height: 1.1rem;
+}
+
+#main .prod .p_info .pi_fore span{
+  color: #f0415f;
+  font-size: 14px;
+}
+
+
+#main .m_service{
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#main .m_service ul{
+  margin-left: .5rem;
+  padding-right: .6rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main .m_service ul li{
+  display: inline-block;
+  margin-right: .5rem;
+  font-size: 12px;
+  color: #999;
+}
+
+#main .m_service ul li i{
+  margin-right: .2rem;
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(40, 152, 255);
+}
+
+
+#main .prod .p_select{
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
+  margin-top: .3rem;
+  line-height: 2rem;
+  background-color: #fff;
+  position: relative;
+}
+
+#main .prod  label{
+  display: block;
+  float: left;
+  height: 2rem;
+  font-size: 14px;
+  margin-right: .5rem;
+  color: #999;
+}
+
+#main .prod .p_select p{
+  float: left;
+  display: block;
+}
+
+#main .prod .p_select p span{
+  color: #333;
+  float: left;
+  max-width: 5rem;
+}
+
+#main .prod .p_select p .ps_number{
+  position: absolute;
+  right: 1.6rem;
+  color: #666;
+}
+
+#main .prod .p_suda{
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+  padding-left: .5rem;
+  background-color: #fff;
+}
+
+#main .prod .p_suda .p_top{
+  height: 1.9rem;
+  padding-right: 1rem;
+  line-height: 1.9rem;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+}
+
+#main .prod .p_suda .p_top span{
+  color: #333;
+  float: left;
+  max-width: 5rem;
+}
+
+#main .prod .p_suda .p_bottom{
+  background-color: #fff;
+}
+
+#main .prod .p_suda .p_bottom p{
+  padding: .7rem .8rem .7rem 1.7rem;
+  line-height: .7rem;
+  color: #999;
+}
+
+
+
+#main .content{
+  position: relative;
+  background: #fff;
+  padding-top: 1.7rem;
+}
+
+#main .content .c_nav{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 1.7rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#main .content .c_nav a{
+  line-height: 1.7rem;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+#main .content .c_inner{
+  position: relative;
+}
+
+#main .content .c_inner img{
+  width: 100%;
+}
+
+.c_hide{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------*/
+
+/*=================== ========= ===================*/
+
+
+#footer{
+  display: flex;
+  background: #fff;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer .f_action{
+  width: 6rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  margin-left: -1px;
+}
+
+#footer .f_action a{
+  width: 50%;
+  border-left: 1px solid #e5e5e5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #999;
+}
+
+#footer .f_action a i{
+  font-size: 16px;
+  padding-bottom: 1px solid #e5e5e5;
+  color: #999;
+}
+
+#footer .f_action a span{
+  line-height: 1;
+  padding-top: 2px;
+}
+
+#footer .f_btn{
+  display: inline-block;
+  line-height: 1.8rem;
+  width: 6rem;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+}
+
+#footer .f_car{
+  background: #00c3f5;
+}
+
+#footer .f_buy{
+  background: #f0415f;
+}
+
+
+
+  /*-------------------------------------------------*/
+
+  /*=================== ========= ===================*/
+
+.layer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.layer .l_inner{
+  background-color: #fff;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 1.8rem;
+  width: 100%;
+}
+
+.layer .l_inner .property{
+  position: absolute;
+  top: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 103;
+  overflow: hidden;
+}
+
+.layer .l_inner .property>div{
+  position: absolute;
+  z-index: 105;
+  padding: .2rem .5rem 1.2rem;
+  box-sizing: border-box;
+}
+
+.layer .l_inner .property>div>dl{
+  padding-top: .5rem;
+}
+
+.layer .l_inner .property>div>dl dt{
+  margin-bottom: .35rem;
+  color: #999;
+}
+
+.layer .l_inner .property>div>dl dd{
+
+}
+
+.layer .l_inner .property>div>dl dd a{
+  display: inline-block;
+  margin: 0 .7rem .35rem 0;
+  padding: .3rem .6rem;
+  color:#666;
+  border-radius: 3px;
+  border: 1px solid #cfcfcf;
+}
+
+.layer .l_inner .property>div>dl dd .l_color{
+  border-color: #00c3f5;
+  color: #00c3f5;
+}
+
+.layer .l_inner .property>div>div{
+  margin-top: .5rem;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.layer .l_inner .property>div>div>span{
+  display: block;
+  margin-bottom: .35rem;
+  color: #999;
+}
+
+.layer .l_inner .property>div>div p{
+  display: inline-block;margin-left: .3rem;
+  vertical-align: middle;
+}
+
+.layer .l_inner .property>div>div>div{
+  position: relative;
+  height: 1.5rem;
+  width: 5.2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  margin-top: 1px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.layer .l_inner .property>div>div>div a{
+  color: #666;
+  position: absolute;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.layer .l_inner .property>div>div>div .l_top{
+  left: 0;
+  border-right: 1px solid #e5e5e5;
+  pointer-events:none;
+  color:#dcdcdc;
+}
+
+.layer .l_inner .property>div>div>div .l_botton{
+  right: 0;
+  border-left: 1px solid #e5e5e5;
+}
+
+.layer .l_inner .property>div>div>div input{
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  line-height: 1.5rem;
+  font-size: 14px;
+  border: 0;
+  text-align: center;
+  color:#333;
+  width: 2.2rem;
+}
+
+
+.layer .l_inner .summary{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 104;
+  width: 100%;
+  padding-left: .5rem;
+  height: 4rem;
+  box-sizing: border-box;
+}
+
+.layer .l_inner .summary .s_pic{
+  position: absolute;
+  bottom: .5rem;
+  background-color: #fff;
+  z-index: 10;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  margin-right: .5rem;
+  height: 100px;
+  width: 100px;
+}
+
+.layer .l_inner .summary .s_pic img{
+  width: 100%;
+}
+
+.layer .l_inner .summary .s_info{
+  position: relative;
+  padding-bottom: .2rem;
+  overflow: hidden;
+  margin-left: 120px;
+}
+
+.layer .l_inner .summary .s_info .s_price{
+  display: block;
+  line-height: 1;
+  font-size: 16px;
+  color: #f0415f;
+  vertical-align: middle;
+  margin-top: .8rem;
+}
+
+.layer .l_inner .summary .s_info .s_title{
+  display: block;
+  margin-top: .3rem;
+}
+
+.layer .l_inner .summary .s_info .s_close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: .5rem;
+  z-index: 10;
+  color: #666;
+}
+
+
+.layer .l_footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+.layer .l_footer button{
+  display: block;
+  float: left;
+  line-height: 2rem;
+  width: 50%;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  background-color: #00c3f5;
+}
+
+.layer .l_footer a{
+  background: #f0415f;
+  display: block;
+  float: left;
+  width: 50%;
+  line-height: 2rem;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-------------------------------------------------*/
+
+    /*=================== ========= ===================*/

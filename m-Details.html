@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="img/标签.ico" rel="shortcut icon">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/cssresets.css">
+  <link rel="stylesheet" href="css/m-Details.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_fvj1n4ogg8kw3ik9.css">
+  <script type="text/javascript">
+  if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  window.location.href = "m-Details.html";
+  }
+  </script>
+  <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+ </script>
+</head>
+<body>
+  <div id="app">
+    <header id="header">
+      <a href="" class="h_back">
+        <i class="iconfont icon-zuo"></i>
+      </a>
+      <div class="h_opacity">
+        <span>商品详情</span>
+      </div>
+      <a href="" class="h_home">
+        <i class="iconfont icon-home"></i>
+      </a>
+    </header>
+
+    <main id="main">
+      <div class="m_goods">
+        <div class="swiper-container m_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/c_left0.jpg"></div>
+                <div class="swiper-slide"><img src="img/c_left1.jpg"></div>
+                <div class="swiper-slide"><img src="img/c_left2.jpg"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="prod">
+        <section class="p_info">
+          <div class="pi_one">
+            <h1>魅族PRO 6 Plus</h1>
+          </div>
+          <div class="pi_two">
+            <span>¥ 2699.00</span>
+          </div>
+          <div class="pi_three">
+            <span>分期价 ￥ 224.92 x 12 期（0手续费）</span>
+          </div>
+          <div class="pi_fore">
+            <span>特惠300元，惠后价格2699元，购机享12期免息</span>
+          </div>
+        </section>
+        <section class="m_service">
+          <ul>
+            <li>
+              <i  class="iconfont icon-duihao"></i>
+              花呗分期
+            </li>
+            <li>
+              <i  class="iconfont icon-duihao"></i>
+              百城速达
+            </li>
+            <li>
+              <i  class="iconfont icon-duihao"></i>
+              顺丰包邮
+            </li>
+            <li>
+              <i  class="iconfont icon-duihao"></i>
+              7天无理由退货
+            </li>
+          </ul>
+        </section>
+        <section class="p_select">
+          <label>已选</label>
+          <p>
+            <span>公开版,深空灰,64GB</span>
+            <span class="ps_number">×1</span>
+          </p>
+        </section>
+        <section class="p_suda">
+          <div class="p_top">
+            <label>送至</label>
+            <span role="button" id="sel_city">广东 广州市</span>
+          </div>
+          <div class="p_bottom">
+            <p>本商品由魅族负责发货并提供售后服务</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="content">
+        <nav class="c_nav">
+          <a style="color:rgb(0, 195, 245)">图文详情</a>
+          <a>规格参数</a>
+          <a>常见问题</a>
+        </nav>
+        <div class="c_inner">
+          <img src="img/main.png" alt="">
+          <img src="img/main3.png" alt="" class="c_hide">
+          <img src="img/main2.png" alt="" class="c_hide">
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="f_action">
+        <a href="">
+          <i class="iconfont icon-shoucang"></i>
+          <span>收藏</span>
+        </a>
+        <a href="">
+          <i class="iconfont icon-gouwucheshoppingcart"></i>
+          <span>购物车</span>
+        </a>
+      </div>
+      <button type="button" name="button" class="f_btn f_car">加入购物车</button>
+      <button type="button" name="button" class="f_btn f_buy">立即购买</button>
+    </footer>
+
+    <section class="layer" style="display:none;">
+      <div class="l_inner">
+        <div class="property">
+          <div>
+            <dl>
+              <dt>网络类型</dt>
+              <dd>
+                <a class="l_color">公开版</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>颜色分类</dt>
+              <dd>
+                <a>香槟金</a>
+                <a class="l_color">深灰空</a>
+                <a>星光银</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>内存容量</dt>
+              <dd>
+                <a class="l_color">64GB</a>
+              </dd>
+            </dl>
+            <div>
+              <span>数量</span>
+              <div>
+                <a class="l_top">-</a>
+                <input type="text" value='1' data-max='5'>
+                <a class="l_botton">+</a>
+              </div>
+              <p>（限购 5 件）</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="s_pic">
+            <img src="img/c_left0.jpg" alt="">
+          </div>
+          <div class="s_info">
+            <span class="s_price">¥ 2699.00</span>
+            <span class="s_title">公开版 深空灰 64GB</span>
+            <a class="s_close">
+              <i class="iconfont icon-close"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="l_footer">
+        <button type="button" name="button">加入购物车</button>
+        <a href="#">立即购买</a>
+      </div>
+    </section>
+
+
+
+
+
+  </div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/m-Details.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true
+  });
+</script>
+
+<script type="text/javascript" src="js/m_Deta/city.js"></script>
+<script type="text/javascript" src="js/m_Deta/picker.min.js"></script>
+<script>
+  var nameEl = document.getElementById('sel_city');
+
+  var first = []; /* 省，直辖市 */
+  var second = []; /* 市 */
+  var third = []; /* 镇 */
+
+  var selectedIndex = [0, 0, 0]; /* 默认选中的地区 */
+
+  var checked = [0, 0, 0]; /* 已选选项 */
+
+  function creatList(obj, list){
+    obj.forEach(function(item, index, arr){
+    var temp = new Object();
+    temp.text = item.name;
+    temp.value = index;
+    list.push(temp);
+    })
+  }
+
+  creatList(city, first);
+
+  if (city[selectedIndex[0]].hasOwnProperty('sub')) {
+    creatList(city[selectedIndex[0]].sub, second);
+  } else {
+    second = [{text: '', value: 0}];
+  }
+
+  if (city[selectedIndex[0]].sub[selectedIndex[1]].hasOwnProperty('sub')) {
+    creatList(city[selectedIndex[0]].sub[selectedIndex[1]].sub, third);
+  } else {
+    third = [{text: '', value: 0}];
+  }
+
+  var picker = new Picker({
+      data: [first, second, third],
+    selectedIndex: selectedIndex,
+      title: '地址选择'
+  });
+
+  picker.on('picker.select', function (selectedVal, selectedIndex) {
+    var text1 = first[selectedIndex[0]].text;
+    var text2 = second[selectedIndex[1]].text;
+    var text3 = third[selectedIndex[2]] ? third[selectedIndex[2]].text : '';
+
+      nameEl.innerText = text1 + ' ' + text2 + ' ' + text3;
+  });
+
+  picker.on('picker.change', function (index, selectedIndex) {
+    if (index === 0){
+      firstChange();
+    } else if (index === 1) {
+      secondChange();
+    }
+
+    function firstChange() {
+      second = [];
+      third = [];
+      checked[0] = selectedIndex;
+      var firstCity = city[selectedIndex];
+      if (firstCity.hasOwnProperty('sub')) {
+        creatList(firstCity.sub, second);
+
+        var secondCity = city[selectedIndex].sub[0]
+        if (secondCity.hasOwnProperty('sub')) {
+          creatList(secondCity.sub, third);
+        } else {
+          third = [{text: '', value: 0}];
+          checked[2] = 0;
+        }
+      } else {
+        second = [{text: '', value: 0}];
+        third = [{text: '', value: 0}];
+        checked[1] = 0;
+        checked[2] = 0;
+      }
+
+      picker.refillColumn(1, second);
+      picker.refillColumn(2, third);
+      picker.scrollColumn(1, 0)
+      picker.scrollColumn(2, 0)
+    }
+
+    function secondChange() {
+      third = [];
+      checked[1] = selectedIndex;
+      var first_index = checked[0];
+      if (city[first_index].sub[selectedIndex].hasOwnProperty('sub')) {
+        var secondCity = city[first_index].sub[selectedIndex];
+        creatList(secondCity.sub, third);
+        picker.refillColumn(2, third);
+        picker.scrollColumn(2, 0)
+      } else {
+        third = [{text: '', value: 0}];
+        checked[2] = 0;
+        picker.refillColumn(2, third);
+        picker.scrollColumn(2, 0)
+      }
+    }
+
+  });
+
+  picker.on('picker.valuechange', function (selectedVal, selectedIndex) {
+    console.log(selectedVal);
+    console.log(selectedIndex);
+  });
+
+  nameEl.addEventListener('click', function () {
+      picker.show();
+  });
+</script>
+</body>
+</html>

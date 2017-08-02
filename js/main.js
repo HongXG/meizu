@@ -145,18 +145,3 @@ $("#container .c_rotation_phone .cr_main .crm_right").click(function(){
   $("#container .c_rotation_phone .cr_main .crm_window .crmw_all").stop().animate({'left':left+'px'},500);
   $("#container .c_rotation_phone .cr_list span").eq(i).css({'background-color':'#000'}).siblings('span').css({'background-color':'#d9d9d9'});
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1
