@@ -89,9 +89,6 @@
   background-color: #fff;
 }
 
-#main .m_goods .m_banner{
-  margin-top: -1.2rem;
-}
 
 #main .m_goods .m_banner .swiper-wrapper{
   width: 100%;
@@ -229,7 +226,6 @@
 #main .prod .p_select p span{
   color: #333;
   float: left;
-  max-width: 5rem;
 }
 
 #main .prod .p_select p .ps_number{
@@ -586,12 +582,13 @@
   width: 100%;
   border-top: 1px solid #e5e5e5;
   background: #fff;
+  box-sizing: border-box;
 }
 
 .layer .l_footer button{
   display: block;
   float: left;
-  line-height: 2rem;
+  line-height: 1.8rem;
   width: 50%;
   color: #fff;
   font-size: 14px;
@@ -599,6 +596,7 @@
   box-sizing: border-box;
   border: none;
   background-color: #00c3f5;
+  padding: 0;
 }
 
 .layer .l_footer a{
@@ -606,7 +604,7 @@
   display: block;
   float: left;
   width: 50%;
-  line-height: 2rem;
+  line-height: 1.8rem;
   color: #fff;
   font-size: 14px;
   text-align: center;
